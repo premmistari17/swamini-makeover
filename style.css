@@ -1,0 +1,1185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2b2225;
+    background: #fff;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+
+.nav-links a {
+    color: #2b2225;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.nav-links a:hover {
+    color: #b56b83;
+}
+
+
+.book-btn,
+.primary-btn {
+    background: #b56b83;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.book-btn:hover,
+.primary-btn:hover {
+    background: #8e4f64;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 88vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 245, 247, 0.98),
+            rgba(255, 245, 247, 0.65)
+        );
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.small-title {
+    color: #b56b83;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+.hero-description {
+    font-size: 18px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.secondary-btn {
+    padding: 12px 22px;
+    border: 1px solid #b56b83;
+    color: #b56b83;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+.image-placeholder {
+    height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4dce3,
+            #e8bdca
+        );
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+.about-content h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+
+.about-content p {
+    margin-bottom: 18px;
+}
+
+
+.about-content h3 {
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+
+.artist {
+    color: #b56b83;
+    font-weight: bold;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    padding: 100px 7%;
+    text-align: center;
+    background: #fff7f9;
+}
+
+
+.services h2,
+.why-us h2,
+.booking h2,
+.contact h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.section-description {
+    margin-bottom: 45px;
+}
+
+
+.service-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.service-card {
+    background: white;
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-7px);
+}
+
+
+.service-number {
+    color: #b56b83;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.service-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+
+.service-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+.service-card span {
+    color: #b56b83;
+    font-weight: bold;
+}
+
+
+/* ================= WHY US ================= */
+
+.why-us {
+    padding: 100px 7%;
+    text-align: center;
+}
+
+
+.features {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.feature {
+    padding: 30px;
+}
+
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+
+/* ================= BOOKING ================= */
+
+.booking {
+    padding: 100px 20px;
+    text-align: center;
+    background: #fff7f9;
+}
+
+
+.booking-content {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+.booking-content > p {
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+button {
+    background: #b56b83;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+button:hover {
+    background: #8e4f64;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+.contact-details {
+    max-width: 1000px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.contact-details div {
+    padding: 25px;
+    border-radius: 15px;
+    background: #fff7f9;
+}
+
+
+.contact-details h3 {
+    margin-bottom: 10px;
+}
+
+
+.contact-details a {
+    color: #b56b83;
+    text-decoration: none;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+
+    background: #2b2225;
+    color: white;
+}
+
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .navbar {
+        padding: 15px;
+    }
+
+
+    .book-btn {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+
+    .hero {
+        min-height: 75vh;
+        padding: 60px 25px;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 70px 25px;
+    }
+
+
+    .image-placeholder {
+        height: 350px;
+    }
+
+
+    .about-content h2,
+    .services h2,
+    .why-us h2,
+    .booking h2,
+    .contact h2 {
+        font-size: 35px;
+    }
+
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+}
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+/* GALLERY */
+
+.gallery {
+    padding: 80px 8%;
+    text-align: center;
+    background: #fff7f9;
+}
+
+.gallery h2 {
+    margin-bottom: 15px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 18px;
+    height: 320px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
+/* PREMIUM NAVBAR */
+
+.navbar {
+    box-shadow: 0 4px 20px rgba(181, 107, 131, 0.12);
+    transition: all 0.3s ease;
+}
+
+.nav-links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b56b83;
+    transform: translateY(-2px);
+}
+
+.book-btn {
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(181, 107, 131, 0.25);
+}
+/* PREMIUM BUTTON EFFECT */
+
+button,
+.book-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.book-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(181, 107, 131, 0.30);
+}
+
+button:active,
+.book-btn:active {
+    transform: scale(0.97);
+}
+html {
+    scroll-behavior: smooth;
+}
+/* PREMIUM SERVICE CARDS */
+
+.service-card {
+    transition: all 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(181, 107, 131, 0.18);
+}
+
+.service-card h3 {
+    transition: color 0.3s ease;
+}
+
+.service-card:hover h3 {
+    color: #b56b83;
+}
+/* PREMIUM GALLERY EFFECT */
+
+.gallery-item {
+    box-shadow: 0 8px 25px rgba(181, 107, 131, 0.12);
+    transition: all 0.35s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(181, 107, 131, 0.25);
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+/* PREMIUM ABOUT IMAGE */
+
+.about-image {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(181, 107, 131, 0.18);
+}
+
+.about-image img {
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+footer {
+    box-shadow: 0 -5px 20px rgba(181, 107, 131, 0.08);
+}
+
+footer p {
+    transition: all 0.3s ease;
+}
+
+footer p:hover {
+    letter-spacing: 0.5px;
+}
+/* AESTHETIC NAVBAR BUTTONS */
+
+.nav-links a {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #fff0f4;
+    color: #b56b83;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(181, 107, 131, 0.15);
+}
+
+.nav-links a:active {
+    transform: scale(0.92);
+    background: #f9dce5;
+}
+/* AESTHETIC CLICK ANIMATION */
+
+.nav-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(181, 107, 131, 0.18);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.nav-links a:active::after {
+    width: 140px;
+    height: 140px;
+}
+.nav-links a:focus {
+    background: #f9dce5;
+    color: #b56b83;
+    box-shadow: 0 5px 15px rgba(181, 107, 131, 0.18);
+    outline: none;
+}
+/* HERO & BOOKING BUTTON ANIMATION */
+
+.book-btn,
+.hero-btn,
+button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+/* Hover effect */
+
+.book-btn:hover,
+.hero-btn:hover,
+button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(181, 107, 131, 0.30);
+}
+
+/* Click effect */
+
+.book-btn:active,
+.hero-btn:active,
+button:active {
+    transform: scale(0.94);
+}
+
+/* Ripple */
+
+.book-btn::after,
+.hero-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.45s ease, height 0.45s ease;
+}
+
+.book-btn:active::after,
+.hero-btn:active::after {
+    width: 250px;
+    height: 250px;
+}
+/* PREMIUM SHINE EFFECT */
+
+.book-btn::before,
+.hero-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+    transform: skewX(-20deg);
+}
+
+.book-btn:hover::before,
+.hero-btn:hover::before {
+    left: 150%;
+    transition: left 0.7s ease;
+}
+/* HERO BUTTONS - AESTHETIC ANIMATION */
+
+.hero-btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    z-index: 1;
+}
+
+/* Soft glow + lift */
+
+.hero-btn:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 12px 30px rgba(181, 107, 131, 0.35);
+}
+
+/* Click / press */
+
+.hero-btn:active {
+    transform: scale(0.94);
+}
+
+/* Shine animation */
+
+.hero-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.55),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.hero-btn:hover::before {
+    left: 150%;
+}
+
+/* Soft ripple */
+
+.hero-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.45s ease, height 0.45s ease;
+    z-index: -1;
+}
+
+.hero-btn:active::after {
+    width: 250px;
+    height: 250px;
+}
+/* SOFT BREATHING GLOW - HERO BUTTONS */
+
+.hero-btn {
+    animation: softGlow 2.8s ease-in-out infinite;
+}
+
+@keyframes softGlow {
+    0%, 100% {
+        box-shadow: 0 5px 18px rgba(181, 107, 131, 0.18);
+    }
+
+    50% {
+        box-shadow: 0 8px 28px rgba(181, 107, 131, 0.38);
+    }
+}
+
+/* Stop glow while hovering */
+.hero-btn:hover {
+    animation: none;
+}
+/* HERO BUTTON - BUBBLE RIPPLE CLICK EFFECT */
+
+.hero-btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Bubble */
+
+.hero-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    transition: width 0.45s ease, height 0.45s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Click */
+
+.hero-btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Keep button text above bubble */
+
+.hero-btn {
+    color: inherit;
+}
+
+.hero-btn > * {
+    position: relative;
+    z-index: 1;
+}
+/* HERO BUTTONS - AESTHETIC BUBBLE CLICK EFFECT */
+
+.primary-btn,
+.secondary-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(181, 107, 131, 0.30);
+}
+
+/* Bubble */
+
+.primary-btn::after,
+.secondary-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    transition: width 0.45s ease, height 0.45s ease;
+    pointer-events: none;
+}
+
+/* CLICK */
+
+.primary-btn:active::after,
+.secondary-btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Press effect */
+
+.primary-btn:active,
+.secondary-btn:active {
+    transform: scale(0.94);
+}
+/* HERO BUTTON - PREMIUM SHINE */
+
+.primary-btn,
+.secondary-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-btn::before,
+.secondary-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+    pointer-events: none;
+}
+
+.primary-btn:hover::before,
+.secondary-btn:hover::before {
+    left: 150%;
+}
+/* HERO CONTENT - SUBTLE FLOATING EFFECT */
+
+.hero-content {
+    animation: heroFloat 4s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+@media (max-width: 768px) {
+
+    .hero-content {
+        animation: heroFloatMobile 5s ease-in-out infinite;
+    }
+
+    @keyframes heroFloatMobile {
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-3px);
+        }
+    }
+
+}
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:active {
+    transform: scale(0.96);
+    box-shadow: 0 5px 20px rgba(181, 107, 131, 0.25);
+}
+#contact a {
+    transition: all 0.3s ease;
+}
+
+#contact a:hover {
+    color: #b56b83;
+    transform: translateX(4px);
+    text-decoration: none;
+}
+
+#contact a:active {
+    transform: scale(0.96);
+}
+#booking input,
+#booking select {
+    transition: all 0.3s ease;
+}
+
+#booking input:focus,
+#booking select:focus {
+    border-color: #b56b83;
+    box-shadow: 0 0 0 4px rgba(181, 107, 131, 0.12);
+    transform: translateY(-2px);
+    outline: none;
+}
+/* BOOKING BUTTON PREMIUM EFFECT */
+
+#booking button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#booking button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(181, 107, 131, 0.30);
+}
+
+#booking button:active {
+    transform: scale(0.94);
+}
+
+#booking button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    transition: width 0.45s ease, height 0.45s ease;
+    pointer-events: none;
+}
+
+#booking button:active::after {
+    width: 300px;
+    height: 300px;
+}
+/* SECTION REVEAL ANIMATION */
+
+.about,
+.services,
+.gallery,
+.why-us,
+.booking,
+.contact {
+    animation: sectionReveal 0.9s ease both;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}/* SCROLL REVEAL */
+
+.reveal-section {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* MOBILE SCROLL REVEAL */
+
+@media (max-width: 768px) {
+
+    .reveal-section {
+        transform: translateY(20px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-section.show {
+        transform: translateY(0);
+    }
+
+}
+/* STICKY NAVBAR */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* PREMIUM STICKY NAVBAR */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 5px 25px rgba(181, 107, 131, 0.12);
+}
